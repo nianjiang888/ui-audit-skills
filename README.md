@@ -14,11 +14,11 @@
 
 ```
 audit/
-├── cn-ui-audit/
-├── ...（共 1 个技能目录）
+└── cn-ui-audit/
+    ├── SKILL.md            # 六步审计工作流 + 反模式禁令清单
+    └── references/
+        └── specs.md        # 小程序/Ant Design/iOS 规范、投稿画幅、中文排版、反AI味清单、评分卡
 ```
-
-每个技能包结构一致：`SKILL.md`（技能定义）、`scripts/`（引擎与冒烟测试）、`resources/`（规则与数据）、`references/`（依据）、`examples/`（输入输出样例）、`README.md`、`FAQ.md`、`CHANGELOG.md`。
 
 ## 本地使用
 
@@ -26,11 +26,7 @@ audit/
 git clone <仓库地址>
 ```
 
-把需要的技能目录整体复制到你的 Agent skills 目录即可。单个技能这样跑：
-
-```
-python <技能目录>/scripts/<引擎>.py --help
-```
+把 `cn-ui-audit/` 目录整体复制到你的 Agent skills 目录即可。这是一个纯指令型技能（无脚本引擎），Agent 读取 `SKILL.md` 后按工作流执行，按需加载 `references/specs.md` 作为规范依据。
 
 ## 从 GitHub 导入到 SkillHub
 
