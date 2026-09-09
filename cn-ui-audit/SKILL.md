@@ -1,6 +1,8 @@
 ---
 name: cn-ui-audit
+slug: cn-ui-audit
 display_name: 中文 UI/产品审计助手
+displayName: 中文 UI/产品审计助手
 version: 1.0.0
 description: 中文产品/UI 审计。触发词：UI 审计/界面体检/设计评审/页面好不好/改改这个界面/小程序规范/配色太丑/对比度够不够/按钮看不清/文案 AI 味/投稿画幅/界面合规；英文：UI audit / design review / frontend critique / Chinese UI review。功能：围绕一个界面（截图 / URL / 代码 / 设计稿描述），按视觉层级、清晰度、可访问性、色彩对比、间距节奏、动效体验六个维度做审计，叠加微信小程序 / Ant Design / iOS 规范、各平台投稿画幅、中文排版与"反 AI 味"文案体检，按严重度输出带整改建议的中文审计报告。核心思路借自海外 impeccable、taste-skill 等前端审计技能（六维审计 + 反模式禁令 + 双模式对比），但规范与数据源全部重写为中文产品场景，未搬任何原文。
 license: MIT
